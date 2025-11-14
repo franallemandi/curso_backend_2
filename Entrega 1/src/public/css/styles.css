@@ -1,0 +1,24 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.btn-custom {
+  border-radius: 20px;
+  padding: 8px 16px;
+}

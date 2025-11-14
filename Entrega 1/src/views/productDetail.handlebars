@@ -1,0 +1,47 @@
+<div class="container my-5">
+  <div class="card shadow-lg">
+    <div class="row g-0">
+      <!-- Imagen -->
+      <div class="col-md-5">
+        {{#if product.thumbnails.[0]}}
+          <img src="{{product.thumbnails.[0]}}" class="img-fluid rounded-start" alt="{{product.title}}">
+        {{else}}
+          <img src="https://via.placeholder.com/500x400?text=Sin+Imagen" class="img-fluid rounded-start" alt="Sin imagen">
+        {{/if}}
+      </div>
+
+      <!-- Info -->
+      <div class="col-md-7">
+        <div class="card-body">
+          <h2 class="card-title">{{product.title}}</h2>
+          <p class="card-text text-muted">{{product.description}}</p>
+
+          <h4 class="text-success fw-bold mb-3">💲 {{product.price}}</h4>
+
+          <ul class="list-group list-group-flush mb-3">
+            <li class="list-group-item"><strong>Categoría:</strong> {{product.category}}</li>
+            <li class="list-group-item"><strong>Stock disponible:</strong> {{product.stock}}</li>
+            <li class="list-group-item"><strong>Código:</strong> {{product.code}}</li>
+            <li class="list-group-item"><strong>Estado:</strong> 
+              {{#if product.status}}
+                <span class="badge bg-success">Activo</span>
+              {{else}}
+                <span class="badge bg-secondary">Inactivo</span>
+              {{/if}}
+            </li>
+          </ul>
+
+          <a href="/api/carts/68db14911e8d4256c5dc5e9b/products/{{product._id}}" class="btn btn-primary btn-lg">
+            🛒 Agregar al carrito
+          </a>
+          <a href="/products" class="btn btn-outline-secondary btn-lg">⬅ Volver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
