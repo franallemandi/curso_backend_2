@@ -1,0 +1,31 @@
+<div class="container">
+  <h1 class="text-center my-4">🛒 Productos en Tiempo Real</h1>
+
+<form id="add-product-form" class="row g-3 mb-4">
+    <div class="col-md-6">
+      <input type="text" name="title" placeholder="Título" required class="form-control">
+    </div>
+    <div class="col-md-6">
+      <input type="number" name="price" placeholder="Precio" required class="form-control">
+    </div>
+    <div class="col-md-6">
+      <input type="text" name="description" placeholder="Descripción" class="form-control">
+    </div>
+    <div class="col-md-6">
+      <input type="text" name="code" placeholder="Código" required class="form-control">
+    </div>
+    <div class="col-md-6">
+      <input type="number" name="stock" placeholder="Stock" required class="form-control">
+    </div>
+    <div class="col-md-6">
+      <input type="text" name="category" placeholder="Categoría" class="form-control">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary btn-custom">Agregar Producto</button>
+    </div>
+  </form>
+
+<ul id="product-list" class="list-group">
+</ul>
+
+<script src="/js/realTimeProducts.js"></script>
